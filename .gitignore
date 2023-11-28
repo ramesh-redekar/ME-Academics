@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/ConsoleApp1/.vs/ConsoleApp1/v17
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/ConsoleApp1/.vs/ConsoleApp1/FileContentIndex
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/ConsoleApp1/obj
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/ConsoleApp1/bin/Debug/net6.0
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/NQueenGeneticAlgorithm/.vs
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/NQueenGeneticAlgorithm/bin/Debug/net6.0
+/First Semester/Laboratory Proficiency I/NQueensProblem-CSharp/NQueenGeneticAlgorithm/obj
