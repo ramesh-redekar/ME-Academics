@@ -25,7 +25,7 @@
         private static GeneticAlgorithmCrossOverWay geneticAlgorithmCrossOverWay = GeneticAlgorithmCrossOverWay.SinglePoint;
         private static GeneticSelectionWay geneticSelectionWay = GeneticSelectionWay.RouletteWheelSelection;
 
-        private static int[] FindBestAnswer(List<int[]> population)
+        public static int[] FindBestAnswer(List<int[]> population)
         {
             return population.MinBy(p => GeneticAlgorithm.CalculateFitness(p));
         }
@@ -300,16 +300,16 @@
         static void Main(string[] args)
         {
 
-            var populations = GeneticAlgorithm.StartProcess();
+            var population = GeneticAlgorithm.StartProcess();
 
-            var bestAnswerPopulations = populations.MinBy(x => GeneticAlgorithm.CalculateFitness(x));
+            var bestAnswer = GeneticAlgorithm.FindBestAnswer(population);
 
-            PrintChessboard(bestAnswerPopulations);
+            PrintSolution(bestAnswer);
 
             Console.WriteLine("");
         }
 
-        static void PrintChessboard(int[] queenPlacements)
+        static void PrintSolution(int[] queenPlacements)
         {
             int n = queenPlacements.Length;
 
